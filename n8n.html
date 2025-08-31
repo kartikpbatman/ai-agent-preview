@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent - AI UI Kit for Tailwind CSS & Figma</title>
+    <meta name="description" content="Transform Your Vision into Reality: Unleash Your Creativity and Build Cutting-Edge AI Startups, Tools, and Products with Our Powerful AI Agent UI Kit">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-brain me-2"></i>AI Agent
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">AI Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="#demo" class="btn btn-primary-custom">Get Started Free</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="badge-pill mb-4">
+                            <i class="fas fa-magic me-2"></i>
+                            Powerful AI Kit for AI Products, Tools and Startups
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            AI UI Kit and Templates for 
+                            <span class="text-gradient">Tailwind CSS and Figma</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            Transform Your Vision into Reality: Unleash Your Creativity and Build Cutting-Edge AI Startups, Tools, and Products with Our Powerful AI Agent UI Kit, Designed to Streamline Development and AI Innovation.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#tools" class="btn btn-primary-custom me-3">
+                                <i class="fas fa-tools me-2"></i>View Tools
+                            </a>
+                            <a href="#demo" class="btn btn-secondary-custom">
+                                <i class="fas fa-play me-2"></i>Watch Intro
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="trust-indicators mt-5">
+                            <p class="trust-text">Trusted by world's largest companies including...</p>
+                            <div class="brand-logos">
+                                <div class="brand-logo">Microsoft</div>
+                                <div class="brand-logo">Google</div>
+                                <div class="brand-logo">Apple</div>
+                                <div class="brand-logo">Amazon</div>
+                                <div class="brand-logo">Meta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="ai-visualization">
+                            <div class="network-graph">
+                                <!-- Central AI Node -->
+                                <div class="central-node">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                
+                                <!-- Connection Lines -->
+                                <div class="connection-line" style="width: 120px; top: 50%; left: 30%; transform: rotate(45deg);"></div>
+                                <div class="connection-line" style="width: 120px; top: 30%; left: 50%; transform: rotate(90deg);"></div>
+                                <div class="connection-line" style="width: 120px; top: 50%; right: 30%; transform: rotate(-45deg);"></div>
+                                <div class="connection-line" style="width: 120px; bottom: 30%; left: 50%; transform: rotate(90deg);"></div>
+                                
+                                <!-- Outer Nodes -->
+                                <div class="outer-nodes">
+                                    <div class="outer-node" style="top: 10%; left: 10%;">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="outer-node" style="top: 10%; right: 10%;">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                    <div class="outer-node" style="bottom: 10%; left: 10%;">
+                                        <i class="fas fa-video"></i>
+                                    </div>
+                                    <div class="outer-node" style="bottom: 10%; right: 10%;">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="outer-node" style="top: 50%; left: 5%;">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="outer-node" style="top: 50%; right: 5%;">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Data Points -->
+                                <div class="data-point" style="top: 40%; left: 25%; --travel-distance: 60px;"></div>
+                                <div class="data-point" style="top: 60%; right: 25%; --travel-distance: -60px;"></div>
+                                <div class="data-point" style="top: 25%; left: 50%; --travel-distance: 40px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Core Features</h2>
+                    <p class="section-subtitle">
+                        Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h4 class="feature-title">Seamless Content Creation AI</h4>
+                        <p class="feature-description">
+                            Let our AI-powered service simplify your content creation process. Start using AI today!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="feature-title">Your Ideas, Powered by Our Technology</h4>
+                        <p class="feature-description">
+                            Discover how AI can transform your ideas into captivating content with our high-quality service.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h4 class="feature-title">Intelligent Writing by Powerful AI</h4>
+                        <p class="feature-description">
+                            Effortlessly access AI-generated content for your blogs, websites, and more with our high-quality, convenient service.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="feature-title">AI Generation Made Life Easier</h4>
+                        <p class="feature-description">
+                            Experience effortless content creation with our AI service. Write less, accomplish more.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4 class="feature-title">Premium AI-Generated Content</h4>
+                        <p class="feature-description">
+                            Get expertly crafted content in no time with our AI service. Where quality meets speed.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="feature-title">Super Fast AI Writing Companion</h4>
+                        <p class="feature-description">
+                            Partner with AI to create content that connects with your audience. Give it a try now.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="tools" class="ai-tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">All the AI tools you need, at your Fingertips</h2>
+                    <p class="section-subtitle">
+                        Unlock the Potential of Innovation, Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="tools-tabs">
+                        <!-- Tab Navigation -->
+                        <ul class="nav nav-pills justify-content-center mb-5" id="toolsTabs">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#text-generator">
+                                    <i class="fas fa-file-alt me-2"></i>Text Generator
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#image-generator">
+                                    <i class="fas fa-image me-2"></i>Image Generator
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#code-generator">
+                                    <i class="fas fa-code me-2"></i>Code Generator
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#video-generator">
+                                    <i class="fas fa-video me-2"></i>Video Generator
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#email-generator">
+                                    <i class="fas fa-envelope me-2"></i>Email Generator
+                                </button>
+                            </li>
+                        </ul>
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="text-generator">
+                                <div class="tool-demo">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <h3 class="tool-title">Easiest way to generate text</h3>
+                                            <p class="tool-description">
+                                                Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.
+                                            </p>
+                                            <a href="#demo" class="btn btn-primary-custom">
+                                                Try it now for free
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="tool-mockup">
+                                                <div class="mockup-container">
+                                                    <div class="mockup-header">
+                                                        <div class="mockup-dots">
+                                                            <span></span><span></span><span></span>
+                                                        </div>
+                                                        <span class="mockup-title">AI Text Generator</span>
+                                                    </div>
+                                                    <div class="mockup-content">
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" placeholder="Describe what you want to write about...">
+                                                            <button class="btn btn-primary" type="button">Generate</button>
+                                                        </div>
+                                                        <div class="generated-text">
+                                                            <div class="typing-animation">
+                                                                Generating amazing content with AI...
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Similar structure for other tabs -->
+                            <div class="tab-pane fade" id="image-generator">
+                                <div class="tool-demo">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <h3 class="tool-title">Create stunning images with AI</h3>
+                                            <p class="tool-description">
+                                                Generate professional-quality images from simple text descriptions using our advanced AI image generation technology.
+                                            </p>
+                                            <a href="#demo" class="btn btn-primary-custom">
+                                                Try it now for free
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="tool-mockup">
+                                                <div class="mockup-container">
+                                                    <div class="mockup-header">
+                                                        <div class="mockup-dots">
+                                                            <span></span><span></span><span></span>
+                                                        </div>
+                                                        <span class="mockup-title">AI Image Generator</span>
+                                                    </div>
+                                                    <div class="mockup-content">
+                                                        <div class="image-placeholder">
+                                                            <i class="fas fa-image fa-3x mb-3"></i>
+                                                            <p>AI-generated image will appear here</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="code-generator">
+                                <div class="tool-demo">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <h3 class="tool-title">Generate code instantly</h3>
+                                            <p class="tool-description">
+                                                Write code faster than ever before with AI assistance. Support for multiple programming languages and frameworks.
+                                            </p>
+                                            <a href="#demo" class="btn btn-primary-custom">
+                                                Try it now for free
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="tool-mockup">
+                                                <div class="mockup-container">
+                                                    <div class="mockup-header">
+                                                        <div class="mockup-dots">
+                                                            <span></span><span></span><span></span>
+                                                        </div>
+                                                        <span class="mockup-title">AI Code Generator</span>
+                                                    </div>
+                                                    <div class="mockup-content">
+                                                        <div class="code-editor">
+                                                            <pre><code>function generateAI() {
+  return "Amazing code here!";
+}</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="video-generator">
+                                <div class="tool-demo">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <h3 class="tool-title">Create videos with AI</h3>
+                                            <p class="tool-description">
+                                                Transform your ideas into engaging videos using our AI-powered video generation technology.
+                                            </p>
+                                            <a href="#demo" class="btn btn-primary-custom">
+                                                Try it now for free
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="tool-mockup">
+                                                <div class="mockup-container">
+                                                    <div class="mockup-header">
+                                                        <div class="mockup-dots">
+                                                            <span></span><span></span><span></span>
+                                                        </div>
+                                                        <span class="mockup-title">AI Video Generator</span>
+                                                    </div>
+                                                    <div class="mockup-content">
+                                                        <div class="video-placeholder">
+                                                            <i class="fas fa-play-circle fa-3x mb-3"></i>
+                                                            <p>AI-generated video preview</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="email-generator">
+                                <div class="tool-demo">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <h3 class="tool-title">Smart email generation</h3>
+                                            <p class="tool-description">
+                                                Create professional emails for any purpose with AI assistance. Perfect tone and structure every time.
+                                            </p>
+                                            <a href="#demo" class="btn btn-primary-custom">
+                                                Try it now for free
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="tool-mockup">
+                                                <div class="mockup-container">
+                                                    <div class="mockup-header">
+                                                        <div class="mockup-dots">
+                                                            <span></span><span></span><span></span>
+                                                        </div>
+                                                        <span class="mockup-title">AI Email Generator</span>
+                                                    </div>
+                                                    <div class="mockup-content">
+                                                        <div class="email-compose">
+                                                            <div class="email-field">
+                                                                <label>To:</label>
+                                                                <span>recipient@example.com</span>
+                                                            </div>
+                                                            <div class="email-field">
+                                                                <label>Subject:</label>
+                                                                <span>AI-generated subject line</span>
+                                                            </div>
+                                                            <div class="email-body">
+                                                                <p>Professional email content generated by AI...</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">The key benefits of using our tools</h2>
+                    <p class="section-subtitle">
+                        Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="benefits-content">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Craft Professional-Grade Content with AI</h4>
+                                <p>Transform your ideas into groundbreaking realities with advanced AI tools.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Boost your Productivity 10X with our AI agent tools</h4>
+                                <p>Unlock the Potential of Innovation, Discover the Advanced AI Tools Intelligence.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Overcome Writer's Block Today</h4>
+                                <p>Discover the cutting-edge AI tools that bring your ideas to life with exceptional accuracy.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="#demo" class="btn btn-primary-custom">
+                            Try it now for Free
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="benefits-visual">
+                        <div class="productivity-chart">
+                            <div class="chart-container">
+                                <div class="chart-bar" style="height: 30%;">
+                                    <span class="chart-label">Before AI</span>
+                                </div>
+                                <div class="chart-bar chart-bar-primary" style="height: 90%;">
+                                    <span class="chart-label">With AI Agent</span>
+                                </div>
+                            </div>
+                            <div class="chart-title">Productivity Increase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">What our users say</h2>
+                    <p class="section-subtitle">
+                        Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and Intelligence.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"As a Senior Software Developer I found AI Agent perfect to write code that can easily be used in my projects, which some are in production already."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Ralph Edwards</h5>
+                                <span>Big Kahuna Burger Ltd</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The AI Agent UI Kit has revolutionized our development process. The components are production-ready and save us weeks of development time."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Albert Flores</h5>
+                                <span>Biffco Enterprises Ltd.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Amazing quality and attention to detail. The AI Agent kit made building our startup's frontend a breeze. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Jenny Wilson</h5>
+                                <span>Acme Co.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Perfect for AI startups! The components are exactly what we needed to build a professional-looking product quickly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Esther Howard</h5>
+                                <span>Barone LLC.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The documentation is excellent and the components work seamlessly. This kit has accelerated our development timeline significantly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Darlene Robertson</h5>
+                                <span>Abstergo Ltd.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Outstanding design system for AI products. The attention to detail and modern aesthetics make our applications stand out."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Devon Lane</h5>
+                                <span>Binford Ltd.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Start Your Content Creation Journey with AI</h2>
+                    <p class="section-subtitle">
+                        Collaborate with AI to generate content that resonates with your audience, drives and delivers meaningful results across all platforms.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Billing Toggle -->
+            <div class="billing-toggle text-center mb-5">
+                <span class="billing-label">Monthly</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="billingToggle">
+                    <label for="billingToggle"></label>
+                </div>
+                <span class="billing-label">Annually</span>
+                <span class="save-badge">Save 20%</span>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Free Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Free</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">0</span>
+                                <span class="period">Per month</span>
+                            </div>
+                            <p class="plan-description">Sed ut perspiciatis unde omnis iste natus ut perspiciatis.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Some limited features only</li>
+                                <li><i class="fas fa-check"></i> 400 messaging limits</li>
+                                <li><i class="fas fa-check"></i> Limited Projects</li>
+                                <li><i class="fas fa-check"></i> 20,000 Words</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <a href="#demo" class="btn btn-outline-primary w-100">Try it for free</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plus Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Plus plan</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">20</span>
+                                <span class="period">Per month</span>
+                            </div>
+                            <p class="plan-description">Billed at periods under limits, see rates of people who use.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Free</li>
+                                <li><i class="fas fa-check"></i> 2000 messaging limits</li>
+                                <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                <li><i class="fas fa-check"></i> Open AI Key Integration</li>
+                                <li><i class="fas fa-check"></i> 80,000 Words</li>
+                                <li><i class="fas fa-check"></i> Consistent support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <a href="#demo" class="btn btn-primary-custom w-100">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Pro plan</h3>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">30</span>
+                                <span class="period">Per month</span>
+                            </div>
+                            <p class="plan-description">Billed at periods under limits, see rates of people who use.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Free</li>
+                                <li><i class="fas fa-check"></i> 5000 messaging limits</li>
+                                <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                <li><i class="fas fa-check"></i> Open AI Key Integration</li>
+                                <li><i class="fas fa-check"></i> 1,00,000 Words</li>
+                                <li><i class="fas fa-check"></i> Consistent support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <a href="#demo" class="btn btn-outline-primary w-100">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <div class="plan-price">
+                                <span class="custom-price">Let's talk</span>
+                            </div>
+                            <p class="plan-description">Sed ut perspiciatis unde omnis iste natus ut perspiciatis.</p>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Free</li>
+                                <li><i class="fas fa-check"></i> 5000 messaging limits</li>
+                                <li><i class="fas fa-check"></i> Unlimited Projects</li>
+                                <li><i class="fas fa-check"></i> Open AI Key Integration</li>
+                                <li><i class="fas fa-check"></i> Unlimited Words</li>
+                                <li><i class="fas fa-check"></i> Consistent support</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-footer">
+                            <a href="#contact" class="btn btn-outline-primary w-100">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">
+                        Answered all frequently asked questions, Still confused? feel free contact with us
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I get free updates?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus magna quis tellus euismod, eget pharetra leo mollis. Donec eget lacus non elit blandit pharetra vitae volutpat libero.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What does the number of "Projects" refer to?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The number of "Projects" refers to the total number of separate workspaces you can create and manage within your account. Each project can have its own settings, team members, and resources.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I upgrade to a higher plan?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can upgrade to a higher plan at any time. When you upgrade, you'll be charged the prorated difference for the remainder of your current billing cycle. Your new features will be available immediately after upgrading.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What does "Unlimited Projects" mean?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    "Unlimited Projects" means you can create as many projects as you need without any restrictions. This allows you to organize your work efficiently without worrying about hitting a project limit.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How can I add Open AI Key?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    To add your OpenAI API key, go to your account settings and navigate to the "API Keys" section. Click on "Add New Key", paste your OpenAI API key, and save your changes. The key will be securely stored and used for all AI-powered features.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Ready to Get Started?</h2>
+                    <p class="section-subtitle mb-4">
+                        Join thousands of developers and startups who are already using AI Agent to build amazing AI-powered applications.
+                    </p>
+                    
+                    <div class="demo-buttons">
+                        <a href="#" class="btn btn-primary-custom btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>Get Started Free
+                        </a>
+                        <a href="#pricing" class="btn btn-secondary-custom btn-lg">
+                            <i class="fas fa-eye me-2"></i>View Pricing
+                        </a>
+                    </div>
+                    
+                    <!-- Chat Demo -->
+                    <div class="chat-demo mt-5">
+                        <div class="chat-header">
+                            <h5><i class="fas fa-robot me-2"></i>AI Assistant Demo</h5>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message ai">
+                                <div class="message-content">
+                                    <p>Hello! I'm your AI assistant. How can I help you build amazing AI applications today?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Ask me anything about AI Agent..." id="chatInput">
+                                <button class="btn btn-primary" type="button" id="sendMessage">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">
+                        Have questions about AI Agent? Our team is here to help you succeed.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form glass">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary-custom">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h4><i class="fas fa-brain me-2"></i>AI Agent</h4>
+                        <p>Transform your vision into reality with our powerful AI UI Kit designed for modern developers and startups.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Product</h5>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#tools">AI Tools</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#docs">Documentation</a></li>
+                            <li><a href="#support">Support</a></li>
+                            <li><a href="#community">Community</a></li>
+                            <li><a href="#api">API</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#terms">Terms</a></li>
+                            <li><a href="#cookies">Cookies</a></li>
+                            <li><a href="#security">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        © 2024 AI Agent. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
